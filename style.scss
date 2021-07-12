@@ -1,0 +1,305 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Otomanopee+One&display=swap');
+
+*
+{
+    box-sizing: border-box;
+    color: rgb(44, 32, 32);
+}
+body
+{
+    background-color: #faead2;
+}
+
+.page-wrapper
+{
+    .intro
+    {
+        header
+        {
+            font-family: 'Press Start 2P', cursive;
+            text-align: center;
+            font-size: 20px;
+            
+            padding: 20px 0 20px 0;
+            border-radius: 1rem;
+            color: white;
+        }
+
+        #zen-summary
+        {
+            p
+            {
+                a
+                {
+                    color: rgb(112, 77, 47);
+                    font-size: 32px;
+                }
+                a:hover
+                {
+                    color: rgb(83, 58, 35);
+                    font-size: 32px;
+                }
+            }
+            font-family: 'Otomanopee One', sans-serif;
+            text-align: center;
+            font-size: 20px;
+            
+        }
+        
+        
+        #zen-preamble
+        {
+            h3
+            {
+                font-family: 'Press Start 2P', cursive;
+                
+                font-size: 20px;
+               
+            }
+            background-color: #dac6a3;
+            font-family: 'Otomanopee One', sans-serif;
+            
+            font-size: 16px;
+            padding: 10px 20px 20px 20px;
+            margin-top: 50px;
+
+            width: 100%;
+            border-radius: 1rem;
+        }
+    }
+}
+.main
+{
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));;
+    margin-top: 20px;
+    @mixin grid ($color : black )
+    {
+        background-color: $color;
+        border-radius: 1rem;
+        padding: 10px 20px 20px 20px;
+        
+    }
+    @mixin font ($font : 'Press Start 2P', $family :cursive )
+    {
+        font-family: $font , $family ;
+        font-size : 1em;
+    }
+        
+    
+    .explanation
+    {
+        @include grid($color : #8b8e7c) ;
+        
+        h3
+        {
+            @include font ;
+        }
+        p
+        {
+            @include font('Otomanopee One' , sans-serif ) ;
+        }
+        
+        
+    }
+    .participation
+    {
+        @include grid($color : #fdcca5) ;
+        
+        h3
+        {
+            @include font ;
+        }
+        p
+        {
+            @include font('Otomanopee One' , sans-serif ) ;
+            a
+            {
+                color: rgb(253, 99, 9);
+                font-size: 20px;
+            }
+            a:hover
+            {
+                color: rgb(255, 0, 0);
+            }
+        }
+        
+    }
+    .benefits
+    {
+    @include grid($color : #8d6d57) ;
+    h3
+    {
+        @include font ;
+    }
+    p
+    {
+        @include font('Otomanopee One' , sans-serif ) ;
+    }
+    height: 30%;
+    
+    }
+   
+    .requirements
+    {
+        @include grid($color : #e2bfbf) ;
+        
+        h3
+        {
+            @include font ;
+        }
+        p
+        {
+            @include font('Otomanopee One' , sans-serif ) ;
+            a
+            {
+                color: rgba(177, 68, 68, 0.637);
+                font-size: 20px;
+            }
+            a:hover
+            {
+                color: rgb(71, 12, 12);
+            }    
+        }
+    }
+        
+    
+}
+
+.wrapper
+{
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));;
+    background-color: #2f4255;
+    margin-top: 40px;
+    border-radius: 1rem ;
+    padding: 10px 20px 20px 20px;
+    @mixin font ($font : 'Press Start 2P', $family :cursive )
+    {
+        font-family: $font , $family ;
+        font-size : 1em;
+        color: rgb(180, 180, 180)
+    }
+    
+    .select
+    {
+        @include font ;
+    }
+    .archives
+    {
+        @include font ;
+    }
+    .resources
+    {
+        @include font ;
+    }
+    li
+    {
+        @include font('Otomanopee One' , sans-serif ) ;
+        
+    }
+    a
+    {
+        color: rgb(180, 180, 180)
+    }
+    a:hover
+    {
+        color: rgb(156, 155, 95)
+    }
+    abbr
+    {
+        color :rgb(180, 180, 180)
+    }
+    abbr:hover
+    {
+        color: rgb(156, 155, 95)
+    }
+
+    .css-resources
+    {
+        color: rgb(180, 180, 180)
+    }
+    
+    
+}
+@mixin delay($delay : 0 )
+{
+    font-family: 'Press Start 2P' ,cursive ;
+    position: relative;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-delay: $delay;
+    animation-iteration-count: infinite;
+    padding: 40px;
+    border-radius: 1rem;
+    
+}
+@keyframes  example
+{
+  0%  {left:0px; top:0px;}
+  50% {left:0px; top:-300px;}
+  100%  {left:0px; top:0px;}
+  
+}
+
+.zen-validate-html 
+{
+    @include delay ;
+    background-color: #E6CCB2;
+    margin-right: 10px;
+}
+.zen-validate-html:hover
+{
+    color: rgb(94, 91, 88);
+} 
+.zen-validate-css
+{
+    @include delay($delay : 0.5 ) ;
+    background-color: #DDB892;
+    margin-right: 10px;
+}
+.zen-validate-css:hover
+{
+    color: rgb(94, 91, 88);
+} 
+.zen-license
+{
+    @include delay(1) ;
+    background-color: #B08968;
+    margin-right: 10px;
+}
+
+.zen-license:hover
+{
+    color: burlywood;
+} 
+.zen-accessibility
+{
+    @include delay(1.5) ;
+    background-color: #7F5539;
+    margin-right: 10px;
+}
+
+.zen-accessibility:hover
+{
+    color: burlywood;
+} 
+.zen-github
+{
+    @include delay(2) ;
+    background-color: #9C6644;
+}
+
+.zen-github:hover
+{
+    color: burlywood;
+} 
+    
+
+
+
+
+
+

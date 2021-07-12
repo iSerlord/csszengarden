@@ -1,0 +1,262 @@
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Otomanopee+One&display=swap");
+* {
+  box-sizing: border-box;
+  color: #2c2020;
+}
+
+body {
+  background-color: #faead2;
+}
+
+.page-wrapper .intro header {
+  font-family: "Press Start 2P", cursive;
+  text-align: center;
+  font-size: 20px;
+  padding: 20px 0 20px 0;
+  border-radius: 1rem;
+  color: white;
+}
+.page-wrapper .intro #zen-summary {
+  font-family: "Otomanopee One", sans-serif;
+  text-align: center;
+  font-size: 20px;
+}
+.page-wrapper .intro #zen-summary p a {
+  color: #704d2f;
+  font-size: 32px;
+}
+.page-wrapper .intro #zen-summary p a:hover {
+  color: #533a23;
+  font-size: 32px;
+}
+.page-wrapper .intro #zen-preamble {
+  background-color: #dac6a3;
+  font-family: "Otomanopee One", sans-serif;
+  font-size: 16px;
+  padding: 10px 20px 20px 20px;
+  margin-top: 50px;
+  width: 100%;
+  border-radius: 1rem;
+}
+.page-wrapper .intro #zen-preamble h3 {
+  font-family: "Press Start 2P", cursive;
+  font-size: 20px;
+}
+
+.main {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin-top: 20px;
+}
+.main .explanation {
+  background-color: #8b8e7c;
+  border-radius: 1rem;
+  padding: 10px 20px 20px 20px;
+}
+.main .explanation h3 {
+  font-family: "Press Start 2P", cursive;
+  font-size: 1em;
+}
+.main .explanation p {
+  font-family: "Otomanopee One", sans-serif;
+  font-size: 1em;
+}
+.main .participation {
+  background-color: #fdcca5;
+  border-radius: 1rem;
+  padding: 10px 20px 20px 20px;
+}
+.main .participation h3 {
+  font-family: "Press Start 2P", cursive;
+  font-size: 1em;
+}
+.main .participation p {
+  font-family: "Otomanopee One", sans-serif;
+  font-size: 1em;
+}
+.main .participation p a {
+  color: #fd6309;
+  font-size: 20px;
+}
+.main .participation p a:hover {
+  color: red;
+}
+.main .benefits {
+  background-color: #8d6d57;
+  border-radius: 1rem;
+  padding: 10px 20px 20px 20px;
+  height: 30%;
+}
+.main .benefits h3 {
+  font-family: "Press Start 2P", cursive;
+  font-size: 1em;
+}
+.main .benefits p {
+  font-family: "Otomanopee One", sans-serif;
+  font-size: 1em;
+}
+.main .requirements {
+  background-color: #e2bfbf;
+  border-radius: 1rem;
+  padding: 10px 20px 20px 20px;
+}
+.main .requirements h3 {
+  font-family: "Press Start 2P", cursive;
+  font-size: 1em;
+}
+.main .requirements p {
+  font-family: "Otomanopee One", sans-serif;
+  font-size: 1em;
+}
+.main .requirements p a {
+  color: rgba(177, 68, 68, 0.637);
+  font-size: 20px;
+}
+.main .requirements p a:hover {
+  color: #470c0c;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  background-color: #2f4255;
+  margin-top: 40px;
+  border-radius: 1rem;
+  padding: 10px 20px 20px 20px;
+}
+.wrapper .select {
+  font-family: "Press Start 2P", cursive;
+  font-size: 1em;
+  color: #b4b4b4;
+}
+.wrapper .archives {
+  font-family: "Press Start 2P", cursive;
+  font-size: 1em;
+  color: #b4b4b4;
+}
+.wrapper .resources {
+  font-family: "Press Start 2P", cursive;
+  font-size: 1em;
+  color: #b4b4b4;
+}
+.wrapper li {
+  font-family: "Otomanopee One", sans-serif;
+  font-size: 1em;
+  color: #b4b4b4;
+}
+.wrapper a {
+  color: #b4b4b4;
+}
+.wrapper a:hover {
+  color: #9c9b5f;
+}
+.wrapper abbr {
+  color: #b4b4b4;
+}
+.wrapper abbr:hover {
+  color: #9c9b5f;
+}
+.wrapper .css-resources {
+  color: #b4b4b4;
+}
+
+@keyframes example {
+  0% {
+    left: 0px;
+    top: 0px;
+  }
+  50% {
+    left: 0px;
+    top: -300px;
+  }
+  100% {
+    left: 0px;
+    top: 0px;
+  }
+}
+.zen-validate-html {
+  font-family: "Press Start 2P", cursive;
+  position: relative;
+  animation-name: example;
+  animation-duration: 4s;
+  animation-delay: 0;
+  animation-iteration-count: infinite;
+  padding: 40px;
+  border-radius: 1rem;
+  background-color: #E6CCB2;
+  margin-right: 10px;
+}
+
+.zen-validate-html:hover {
+  color: #5e5b58;
+}
+
+.zen-validate-css {
+  font-family: "Press Start 2P", cursive;
+  position: relative;
+  animation-name: example;
+  animation-duration: 4s;
+  animation-delay: 0.5;
+  animation-iteration-count: infinite;
+  padding: 40px;
+  border-radius: 1rem;
+  background-color: #DDB892;
+  margin-right: 10px;
+}
+
+.zen-validate-css:hover {
+  color: #5e5b58;
+}
+
+.zen-license {
+  font-family: "Press Start 2P", cursive;
+  position: relative;
+  animation-name: example;
+  animation-duration: 4s;
+  animation-delay: 1;
+  animation-iteration-count: infinite;
+  padding: 40px;
+  border-radius: 1rem;
+  background-color: #B08968;
+  margin-right: 10px;
+}
+
+.zen-license:hover {
+  color: burlywood;
+}
+
+.zen-accessibility {
+  font-family: "Press Start 2P", cursive;
+  position: relative;
+  animation-name: example;
+  animation-duration: 4s;
+  animation-delay: 1.5;
+  animation-iteration-count: infinite;
+  padding: 40px;
+  border-radius: 1rem;
+  background-color: #7F5539;
+  margin-right: 10px;
+}
+
+.zen-accessibility:hover {
+  color: burlywood;
+}
+
+.zen-github {
+  font-family: "Press Start 2P", cursive;
+  position: relative;
+  animation-name: example;
+  animation-duration: 4s;
+  animation-delay: 2;
+  animation-iteration-count: infinite;
+  padding: 40px;
+  border-radius: 1rem;
+  background-color: #9C6644;
+}
+
+.zen-github:hover {
+  color: burlywood;
+}
+
+/*# sourceMappingURL=style.css.map */
